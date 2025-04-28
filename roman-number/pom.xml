@@ -98,7 +98,8 @@
         </configuration>
         <executions>
           <execution>
-            <phase>verify</phase>
+            <id>checkstyle-validation</id>
+            <phase>package</phase>
             <goals>
               <goal>checkstyle</goal>
             </goals>
