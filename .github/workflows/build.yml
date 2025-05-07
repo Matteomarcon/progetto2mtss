@@ -22,8 +22,8 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: mvn -B install --file pom.xml
-      working-directory: roman-number
+      run: mvn -B install --file roman-number/pom.xml
+      working-directory: progetto2mtss
     - name: Test with JaCoCo
       run: mvn test jacoco:report
-      working-directory: roman-number
+      working-directory: progetto2mtss
