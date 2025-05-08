@@ -22,7 +22,7 @@ IntegerToRoman integertoroman = new IntegerToRoman();
 assertNotNull(integertoroman);
 }
 @Test
-public void testPrimiVentiInteri() {
+public void testPrimiCentoInteri() {
 assertEquals(IntegerToRoman.convert(1),"I");
 assertEquals(IntegerToRoman.convert(2),"II");
 assertEquals(IntegerToRoman.convert(3),"III");
@@ -42,5 +42,8 @@ assertEquals(IntegerToRoman.convert(20),"XX");
 assertEquals(IntegerToRoman.convert(30),"XXX");
 assertEquals(IntegerToRoman.convert(40),"XL");
 assertEquals(IntegerToRoman.convert(50),"L");
+assertEquals(IntegerToRoman.convert(60),"LX");
+assertEquals(IntegerToRoman.convert(90),"XC");
+assertEquals(IntegerToRoman.convert(100),"C");
 }
 }
