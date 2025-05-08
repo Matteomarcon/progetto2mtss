@@ -6,6 +6,7 @@
 package it.unipd.mtss;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 import org.junit.jupiter.api.Test;
 public class IntegerToRomanTest {
 @Test
@@ -14,6 +15,11 @@ assertThrows(IllegalArgumentException.class, () ->
 IntegerToRoman.convert(0));
 assertThrows(IllegalArgumentException.class, () -> 
 IntegerToRoman.convert(9999));
+}
+@Test
+public void testCostruttore() {
+IntegerToRoman integertoroman = new IntegerToRoman();
+assertNotNull(integertoroman);
 }
 @Test
 public void testPrimiDieciInteri() {

@@ -5,6 +5,7 @@
 package it.unipd.mtss;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 import org.junit.jupiter.api.Test;
 public class RomanPrinterTest {
 @Test
@@ -13,6 +14,11 @@ assertThrows(IllegalArgumentException.class, () ->
 RomanPrinter.print(0));
 assertThrows(IllegalArgumentException.class, () -> 
 RomanPrinter.print(9999));
+}
+@Test
+public void testCostruttore() {
+RomanPrinter romanprinter = new RomanPrinter();
+assertNotNull(romanprinter);
 }
 @Test
 public void printerTestPrimiDieciInteri() {
