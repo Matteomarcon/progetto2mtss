@@ -2,11 +2,18 @@
 // Matteo Marcon 2101060
 // Roberto Piovesan 2101065
 ////////////////////////////////////////////////////////////////////
-
 package it.unipd.mtss;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import org.junit.jupiter.api.Test;
 public class RomanPrinterTest {
+@Test
+public void testEccezioni(){
+assertThrows(IllegalArgumentException.class, () -> 
+RomanPrinter.print(0));
+assertThrows(IllegalArgumentException.class, () -> 
+RomanPrinter.print(9999));
+}
 @Test
 public void printerTestPrimiDieciInteri() {
 assertEquals(RomanPrinter.print(1)," ‾|‾ \n  |  \n _|_ \n");

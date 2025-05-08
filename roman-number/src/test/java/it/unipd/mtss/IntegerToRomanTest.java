@@ -5,8 +5,16 @@
 
 package it.unipd.mtss;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import org.junit.jupiter.api.Test;
 public class IntegerToRomanTest {
+@Test
+public void testEccezioni(){
+assertThrows(IllegalArgumentException.class, () -> 
+IntegerToRoman.convert(0));
+assertThrows(IllegalArgumentException.class, () -> 
+IntegerToRoman.convert(9999));
+}
 @Test
 public void testPrimiDieciInteri() {
 assertEquals(IntegerToRoman.convert(1),"I");
