@@ -8,12 +8,16 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 public class IntegerToRomanTest {
 @Test
-public void testPrimiSeiInteri() {
+public void testPrimiDieciInteri() {
 assertEquals(IntegerToRoman.convert(1),"I");
 assertEquals(IntegerToRoman.convert(2),"II");
 assertEquals(IntegerToRoman.convert(3),"III");
 assertEquals(IntegerToRoman.convert(4),"IV");
 assertEquals(IntegerToRoman.convert(5),"V");
 assertEquals(IntegerToRoman.convert(6),"VI");
+assertEquals(IntegerToRoman.convert(7),"VII");
+assertEquals(IntegerToRoman.convert(8),"VIII");
+assertEquals(IntegerToRoman.convert(9),"IX");
+assertEquals(IntegerToRoman.convert(10),"X");
 }
 }
