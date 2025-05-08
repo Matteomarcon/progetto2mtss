@@ -21,7 +21,7 @@ RomanPrinter romanprinter = new RomanPrinter();
 assertNotNull(romanprinter);
 }
 @Test
-public void printerTestPrimiCinquecentoInteri() {
+public void printerTestPrimiMilleInteri() {
 assertEquals(RomanPrinter.print(1)," ‾|‾ \n  |  \n _|_ \n");
 assertEquals(RomanPrinter.print(2)," ‾|‾  ‾|‾ \n  |    |  \n _|_  _|_ \n");
 assertEquals(RomanPrinter.print(3)," ‾|‾  ‾|‾  ‾|‾ \n  |    |    |  \n _|_  _|_  _|_ \n");
@@ -53,5 +53,8 @@ assertEquals(RomanPrinter.print(100)," /‾‾\\ \n |    \n \\__/ \n");
 assertEquals(RomanPrinter.print(200)," /‾‾\\  /‾‾\\ \n |     |    \n \\__/  \\__/ \n");
 assertEquals(RomanPrinter.print(400)," /‾‾\\  |‾‾\\  \n |     |   | \n \\__/  |__/  \n");
 assertEquals(RomanPrinter.print(500)," |‾‾\\  \n |   | \n |__/  \n");
+assertEquals(RomanPrinter.print(600)," |‾‾\\   /‾‾\\ \n |   |  |    \n |__/   \\__/ \n");
+assertEquals(RomanPrinter.print(900)," /‾‾\\  |\\    /| \n |     | \\  / | \n \\__/  |  \\/  | \n");
+assertEquals(RomanPrinter.print(1000)," |\\    /| \n | \\  / | \n |  \\/  | \n");
 }
 }
