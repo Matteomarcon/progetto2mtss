@@ -43,5 +43,8 @@ assertEquals(RomanPrinter.print(16)," \\  /  \\    /  ‾|‾ \n  \\/    \\  /  
 assertEquals(RomanPrinter.print(19)," \\  /  ‾|‾  \\  / \n  \\/    |    \\/  \n"
 +" /  \\  _|_  /  \\ \n");
 assertEquals(RomanPrinter.print(20)," \\  /  \\  / \n  \\/    \\/  \n /  \\  /  \\ \n");
+assertEquals(RomanPrinter.print(30)," \\  /  \\  /  \\  / \n  \\/    \\/    \\/  \n /  \\  /  \\  /  \\ \n");
+assertEquals(RomanPrinter.print(40)," \\  /  |    \n  \\/   |    \n /  \\  |___ \n");
+assertEquals(RomanPrinter.print(50)," |    \n |    \n |___ \n");
 }
 }

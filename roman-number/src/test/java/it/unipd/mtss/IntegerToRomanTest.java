@@ -39,5 +39,8 @@ assertEquals(IntegerToRoman.convert(15),"XV");
 assertEquals(IntegerToRoman.convert(16),"XVI");
 assertEquals(IntegerToRoman.convert(19),"XIX");
 assertEquals(IntegerToRoman.convert(20),"XX");
+assertEquals(IntegerToRoman.convert(30),"XXX");
+assertEquals(IntegerToRoman.convert(40),"XL");
+assertEquals(IntegerToRoman.convert(50),"L");
 }
 }
